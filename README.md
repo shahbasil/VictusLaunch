@@ -111,8 +111,12 @@ The lead form is set up to integrate with:
 - Accessibility: WCAG AA compliant
 - Mobile: 60 FPS (3D disabled on mobile by default)
 
-## License
+## License  
 
-© Victus Launch 2024. All rights reserved.
+
+
+© Victus Launch 2024. All rights reserved. 
+
+Trigger redeploy
 
 
