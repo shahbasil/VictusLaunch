@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-victus-bg text-victus-text antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-victus-violet to-victus-cyan;
+  }
+  .glass {
+    @apply backdrop-blur-md bg-black/20 border border-white/10;
+  }
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(138, 59, 255, 0.3);
+  }
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(0, 209, 255, 0.3);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar but keep functionality */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141A26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #8A3BFF, #00D1FF);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #8A3BFF, #00D1FF);
+  opacity: 0.8;
+}
+
+/* Path animation for roadmap timeline */
+.path-animation {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawPath 2s ease-out forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Infinity vortex animation */
+.animate-vortex {
+  animation: vortex 4s ease-in-out infinite;
+}
+
+.animate-vortex-outer {
+  animation: vortex-outer 3s ease-in-out infinite reverse;
+}
+
+@keyframes vortex {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1);
+  }
+}
+
+@keyframes vortex-outer {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.9);
+    opacity: 0.3;
+  }
+}
+
+/* Hand-drawn underline animation */
+.animate-drawUnderline {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: drawUnderline 2s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes drawUnderline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Wavy background animation */
+.animate-wave {
+  animation: wave 20s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+/* Pulsing glow animation */
+.animate-pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 8px rgba(34, 211, 238, 0.8);
+  }
+  50% {
+    opacity: 0.6;
+    box-shadow: 0 0 16px rgba(34, 211, 238, 1);
+  }
+}
+
+/* Slow pulse for backgrounds */
+.animate-pulse-slow {
+  animation: pulseSlow 8s ease-in-out infinite;
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.1;
+    transform: scale(1.1);
+  }
+}
+
+/* Gradient animation */
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Soft pulse animation */
+.animate-pulse-soft {
+  animation: pulseSoft 2s ease-in-out infinite;
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
