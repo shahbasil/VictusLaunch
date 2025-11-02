@@ -1,0 +1,36 @@
+=== QUICK EMAIL SETUP IN 5 STEPS ===
+
+Current setup: Applications open email client (not automatic)
+
+To make it automatic, use EmailJS:
+
+STEP 1: Go to https://emailjs.com
+        - Sign up (free, 200 emails/month)
+        
+STEP 2: Add your email service
+        - Click "Add New Service"
+        - Choose Gmail/Outlook/etc
+        - Follow instructions
+        
+STEP 3: Create email template
+        - Click "Email Templates"
+        - Create new template
+        - Add variables: {{subject}}, {{message}}, {{exchange}}, etc.
+        
+STEP 4: Get your keys
+        - Service ID: from "Email Services"
+        - Template ID: from "Email Templates"  
+        - Public Key: from "Account" → "General"
+        
+STEP 5: Update code
+        - Run: npm install @emailjs/browser
+        - Open: src/utils/emailService.js
+        - Uncomment EmailJS code (lines 37-63)
+        - Replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY
+        - Comment out mailto section (lines 15-24)
+        - Save and restart: npm run dev
+        
+DONE! Applications will automatically email you!
+
+Need help? Read HOW_TO_RECEIVE_APPLICATIONS.md for details.
+

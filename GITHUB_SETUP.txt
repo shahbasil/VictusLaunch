@@ -1,0 +1,56 @@
+📦 GITHUB SETUP - UPLOAD YOUR FILES
+═══════════════════════════════════════════════════════════════
+
+METHOD 1: UPLOAD VIA BROWSER (EASIEST!)
+─────────────────────────────────────────────────────────────
+
+Step 1: CREATE REPOSITORY
+  1. Go to: https://github.com/new
+  2. Repository name: "victus-launch"
+  3. Make it PRIVATE (or public, your choice)
+  4. DON'T add README, .gitignore, or license
+  5. Click "Create repository"
+
+Step 2: UPLOAD FILES
+  1. On the next page, you'll see "uploading an existing file"
+  2. Click "uploading an existing file"
+  3. Drag and drop ALL your project files EXCEPT:
+     - node_modules (don't upload this!)
+     - dist (don't upload this!)
+  4. Click "Commit changes"
+
+Done! Your files are on GitHub!
+
+═══════════════════════════════════════════════════════════════
+
+METHOD 2: USING GIT COMMANDS (FASTER!)
+─────────────────────────────────────────────────────────────
+
+I can do this for you with commands if you prefer.
+
+═══════════════════════════════════════════════════════════════
+
+WHAT TO UPLOAD:
+─────────────────────────────────────────────────────────────
+✓ Upload:
+  - src/ (all files)
+  - public/ (all files)
+  - index.html
+  - package.json
+  - vite.config.js
+  - tailwind.config.js
+  - postcss.config.js
+  - .gitignore
+  - README.md (if you have one)
+
+✗ DON'T upload:
+  - node_modules/
+  - dist/
+  - Any .env files
+
+═══════════════════════════════════════════════════════════════
+
+After uploading to GitHub, Vercel can auto-deploy!
+
+═══════════════════════════════════════════════════════════════
+

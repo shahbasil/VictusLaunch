@@ -1,0 +1,20 @@
+IMPORTANT SETUP STEPS
+=====================
+
+1. ADD YOUR PROFILE PHOTO
+   - Place your photo in the 'public' folder
+   - Name it: shah-profile.jpg
+   - It will appear on the Contact page
+   - If missing, "VG" placeholder shows
+
+2. EMAIL SETUP (Optional - currently uses mailto)
+   - For automatic email sending, see src/utils/emailService.js
+   - Sign up at https://emailjs.com or https://formspree.io
+   - Follow instructions in the file
+
+CURRENT CHANGES
+===============
+✓ "BYBIT" replaced with "LISTING" throughout
+✓ Added Telegram contact: t.me/shahbasilSB
+✓ Updated all exchange references
+

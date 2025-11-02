@@ -1,0 +1,66 @@
+════════════════════════════════════════════════════════════
+          HOW TO MAKE YOUR WEBSITE LIVE - SIMPLE GUIDE
+════════════════════════════════════════════════════════════
+
+BEST OPTION: Vercel (FREE, EASIEST, 2 MINUTES!)
+════════════════════════════════════════════════════════
+
+STEP 1: Build your site
+   cd "C:\Users\offic\OneDrive\Desktop\Victus Launch"
+   npm run build
+
+STEP 2: Sign up at Vercel
+   - Go to https://vercel.com
+   - Sign up with GitHub (or email)
+   - It's FREE!
+
+STEP 3: Deploy
+   - Click "Add New Project"
+   - Drag and drop your "dist" folder
+   - Done! Your site is live!
+
+STEP 4: Get your link
+   - Vercel gives you: https://your-site.vercel.app
+   - You can add a custom domain later
+
+═════════════════════════════════════════════════════════════════
+
+
+OPTION 2: Netlify Drop (EVEN EASIER!)
+════════════════════════════════════════════════════════════
+
+1. Build: npm run build
+2. Go to: https://app.netlify.com/drop
+3. Drag "dist" folder
+4. Done!
+
+═════════════════════════════════════════════════════════════════
+
+
+OPTION 3: GitHub Pages (FREE, WITH CUSTOM DOMAIN)
+════════════════════════════════════════════════════════════
+
+1. Create GitHub account
+2. Create new repository
+3. Upload your files
+4. Go to Settings → Pages
+5. Select "main" branch
+6. Your site: https://username.github.io/victus-launch
+
+═════════════════════════════════════════════════════════════════
+
+
+ADDING CUSTOM DOMAIN (Optional)
+════════════════════════════════════════════════════════════
+
+Vercel & Netlify let you add your own domain:
+- Buy domain at Namecheap/GoDaddy
+- Add in hosting settings
+- Free SSL included!
+
+═════════════════════════════════════════════════════════════════
+
+RECOMMENDATION: Use Vercel - it's the easiest!
+
+Need help? Message me with the option you choose.
+
